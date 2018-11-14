@@ -1,7 +1,6 @@
 ﻿namespace CMPH_Finance.Migrations
 {
     using CMPH_Finance.Models;
-    using CMPH_Financial.Models;
     using Microsoft.AspNet.Identity;
     using Microsoft.AspNet.Identity.EntityFramework;
     using System;
@@ -9,14 +8,14 @@
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<CMPH_Financial.Models.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<CMPH_Finance.Models.ApplicationDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(CMPH_Financial.Models.ApplicationDbContext context)
+        protected override void Seed(CMPH_Finance.Models.ApplicationDbContext context)
         {
             //  This method will be called after migrating to the latest version.
             //create roles

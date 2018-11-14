@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace CMPH_Financial.Models
+namespace CMPH_Finance.Models
 {
     public class ExternalLoginConfirmationViewModel
     {

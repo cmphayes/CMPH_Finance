@@ -6,7 +6,7 @@ using CMPH_Finance.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace CMPH_Financial.Models
+namespace CMPH_Finance.Models
 {
     public class ApplicationUser : IdentityUser
     {

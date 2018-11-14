@@ -7,7 +7,6 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using CMPH_Finance.Models;
-using CMPH_Financial.Models;
 using Microsoft.AspNet.Identity;
 
 namespace CMPH_Financial.Controllers

@@ -6,11 +6,9 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using CMPH_Finance.Models;
 using Microsoft.AspNet.Identity;
 using CMPH_Financial.Helpers;
-using CMPH_Financial.Helpers;
-using CMPH_Financial.Models;
+using CMPH_Finance.Models;
 
 namespace CMPH_Financial.Controllers
 {

@@ -1,6 +1,5 @@
 ﻿using CMPH_Finance;
 using CMPH_Finance.Models;
-using CMPH_Financial.Models;
 using System;
 using System.Collections.Generic;
 using System.Configuration;

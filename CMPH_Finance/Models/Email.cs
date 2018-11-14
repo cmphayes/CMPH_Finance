@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace CMPH_Financial.Models
+namespace CMPH_Finance.Models
 {
     public class EmailModel
     {

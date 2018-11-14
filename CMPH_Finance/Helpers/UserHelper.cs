@@ -1,5 +1,4 @@
 ﻿using CMPH_Finance.Models;
-using CMPH_Financial.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;

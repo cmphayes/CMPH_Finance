@@ -10,10 +10,10 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using CMPH_Financial.Models;
 using System.Web.Configuration;
 using System.Net.Mail;
 using System.Net;
+using CMPH_Finance.Models;
 
 namespace CMPH_Finance
 {

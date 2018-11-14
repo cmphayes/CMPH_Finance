@@ -10,10 +10,9 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using CMPH_Financial.Helpers;
-using CMPH_Finance.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
-using CMPH_Financial.Models;
+using CMPH_Finance.Models;
 using CMPH_Finance.Views;
 using CMPH_Finance;
 

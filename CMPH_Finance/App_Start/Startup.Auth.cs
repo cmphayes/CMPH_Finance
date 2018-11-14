@@ -5,9 +5,8 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using CMPH_Finance.Models;
-using CMPH_Financial.Models;
 using static CMPH_Finance.InviteEmail;
+using CMPH_Finance.Models;
 
 namespace CMPH_Finance
 {
