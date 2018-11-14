@@ -1,28 +1,13 @@
-﻿@model IEnumerable<CMPH_Finance.Models.Transaction>
-
+﻿@model IEnumerable<CMPH_Financial.Models.Transaction>
 @{
     ViewBag.Title = "Index";
 }
-
 <h2>Index</h2>
-
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Account.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.EnteredBy.Email)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ReconcilEnteredBy.Email)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TransactionType.Name)
-        </th>
         <th>
             @Html.DisplayNameFor(model => model.Description)
         </th>
@@ -33,103 +18,72 @@
             @Html.DisplayNameFor(model => model.TransactionAmount)
         </th>
         <th>
+            @Html.DisplayNameFor(model => model.TransactionType)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.Reconciled)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.ReconciledAmount)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ReconciledTime)
+            @Html.DisplayNameFor(model => model.CategoryId)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Property)
+            @Html.DisplayNameFor(model => model.EnteredById)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.OldValue)
+            @Html.DisplayNameFor(model => model.AccountId)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.NewValue)
+            @Html.DisplayNameFor(model => model.ReconcilEnteredById)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Deleted)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Void)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.VoidTime)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.VoidedById)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.BudgetItemId)
-        </th>
         <th></th>
     </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Account.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.EnteredBy.Email)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ReconcilEnteredBy.Email)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TransactionType.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TransactionTime)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TransactionAmount)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Reconciled)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ReconciledAmount)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ReconciledTime)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Property)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.OldValue)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.NewValue)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Deleted)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Void)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.VoidTime)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.VoidedById)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.BudgetItemId)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
-}
-
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TransactionTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TransactionAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TransactionType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Reconciled)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReconciledAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnteredById)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccountId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReconcilEnteredById)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Deleted)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
 </table>

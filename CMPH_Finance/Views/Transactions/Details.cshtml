@@ -1,162 +1,71 @@
-﻿@model CMPH_Finance.Models.Transaction
-
+﻿@model CMPH_Financial.Models.Transaction
 @{
     ViewBag.Title = "Details";
 }
-
 <h2>Details</h2>
-
 <div>
     <h4>Transaction</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Account.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Account.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.EnteredBy.Email)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.EnteredBy.Email)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ReconcilEnteredBy.Email)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ReconcilEnteredBy.Email)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.TransactionType.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.TransactionType.Name)
-        </dd>
-
-        <dt>
             @Html.DisplayNameFor(model => model.Description)
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.Description)
         </dd>
-
         <dt>
             @Html.DisplayNameFor(model => model.TransactionTime)
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.TransactionTime)
         </dd>
-
         <dt>
             @Html.DisplayNameFor(model => model.TransactionAmount)
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.TransactionAmount)
         </dd>
-
+        <dt>
+            @Html.DisplayNameFor(model => model.TransactionType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TransactionType)
+        </dd>
         <dt>
             @Html.DisplayNameFor(model => model.Reconciled)
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.Reconciled)
         </dd>
-
         <dt>
             @Html.DisplayNameFor(model => model.ReconciledAmount)
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.ReconciledAmount)
         </dd>
-
         <dt>
-            @Html.DisplayNameFor(model => model.ReconciledTime)
+            @Html.DisplayNameFor(model => model.EnteredById)
         </dt>
-
         <dd>
-            @Html.DisplayFor(model => model.ReconciledTime)
+            @Html.DisplayFor(model => model.EnteredById)
         </dd>
-
         <dt>
-            @Html.DisplayNameFor(model => model.Property)
+            @Html.DisplayNameFor(model => model.AccountId)
         </dt>
-
         <dd>
-            @Html.DisplayFor(model => model.Property)
+            @Html.DisplayFor(model => model.AccountId)
         </dd>
-
         <dt>
-            @Html.DisplayNameFor(model => model.OldValue)
+            @Html.DisplayNameFor(model => model.ReconcilEnteredById)
         </dt>
-
         <dd>
-            @Html.DisplayFor(model => model.OldValue)
+            @Html.DisplayFor(model => model.ReconcilEnteredById)
         </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.NewValue)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.NewValue)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Deleted)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Deleted)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Void)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Void)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.VoidTime)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.VoidTime)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.VoidedById)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.VoidedById)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.BudgetItemId)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BudgetItemId)
-        </dd>
-
     </dl>
 </div>
 <p>
+    @Html.ActionLink("Void", "Void", new { id = Model.Id }) |
+    @Html.ActionLink("Reconcil", "Reconcil", new { id = Model.Id }) |
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

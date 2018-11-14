@@ -1,47 +1,36 @@
-﻿@model CMPH_Finance.Models.BudgetItem
-
+﻿@model CMPH_Financial.Models.BudgetItem
 @{
     ViewBag.Title = "Details";
 }
-
 <h2>Details</h2>
-
 <div>
     <h4>BudgetItem</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Budget.Name)
+            @Html.DisplayNameFor(model => model.Amount)
         </dt>
-
         <dd>
-            @Html.DisplayFor(model => model.Budget.Name)
+            @Html.DisplayFor(model => model.Amount)
         </dd>
-
         <dt>
-            @Html.DisplayNameFor(model => model.CurrentBalance)
+            @Html.DisplayNameFor(model => model.TransactionId)
         </dt>
-
         <dd>
-            @Html.DisplayFor(model => model.CurrentBalance)
+            @Html.DisplayFor(model => model.TransactionId)
         </dd>
-
         <dt>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.CategoryId)
         </dt>
-
         <dd>
-            @Html.DisplayFor(model => model.Name)
+            @Html.DisplayFor(model => model.CategoryId)
         </dd>
-
         <dt>
-            @Html.DisplayNameFor(model => model.Deleted)
+            @Html.DisplayNameFor(model => model.BudgetId)
         </dt>
-
         <dd>
-            @Html.DisplayFor(model => model.Deleted)
+            @Html.DisplayFor(model => model.BudgetId)
         </dd>
-
     </dl>
 </div>
 <p>

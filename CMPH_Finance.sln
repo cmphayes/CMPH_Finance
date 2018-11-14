@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMPH_Finance", "CMPH_Finance\CMPH_Finance.csproj", "{85DD6125-49A6-4164-B5DE-139D5C42D6A6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions Items", "Solutions Items", "{4D09C6FF-BB3E-4C25-9C14-AD4B880E2386}"
+	ProjectSection(SolutionItems) = preProject
+		private.config = private.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

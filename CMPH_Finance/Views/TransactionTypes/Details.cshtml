@@ -1,11 +1,8 @@
-﻿@model CMPH_Finance.Models.TransactionType
-
+﻿@model CMPH_Financial.Models.TransactionType
 @{
     ViewBag.Title = "Details";
 }
-
 <h2>Details</h2>
-
 <div>
     <h4>TransactionType</h4>
     <hr />
@@ -13,35 +10,15 @@
         <dt>
             @Html.DisplayNameFor(model => model.Name)
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.Name)
         </dd>
-
         <dt>
-            @Html.DisplayNameFor(model => model.Deleted)
+            @Html.DisplayNameFor(model => model.Type)
         </dt>
-
         <dd>
-            @Html.DisplayFor(model => model.Deleted)
+            @Html.DisplayFor(model => model.Type)
         </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Created)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Created)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CreatedBy)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CreatedBy)
-        </dd>
-
     </dl>
 </div>
 <p>
